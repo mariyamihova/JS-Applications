@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Countries and towns</title>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="05.%20Countries%20and%20towns.js"></script>
+</head>
+<body>
+<h2>All Countries</h2>
+<button id="btnLoadCountries">Load Countries</button>
+<div id="countries"></div>
+<h2>Add country</h2>
+<form id="addForm">
+    <label for="name">Name</label>
+    <input type="text" id="name"/>
+    <button class="create">Create</button>
+</form>
+<h2>Towns by country</h2>
+<input type="text" id="targetCountry"/>
+<button id="btnLoadTowns">Load towns</button>
+<div id="towns"></div>
+<h2>Add town</h2>
+<button id="loadCountry">Load country</button>
+<select id="countryList"></select><br>
+<label for="name">Enter town name</label><br>
+<input type="text" id="townName"/><br>
+<button id="createTown">Create</button>
+
+<script>
+    $(() => attachEvents())
+</script>
+</body>
+</html>
