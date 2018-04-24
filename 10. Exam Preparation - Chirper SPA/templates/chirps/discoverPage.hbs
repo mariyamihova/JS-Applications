@@ -1,0 +1,18 @@
+{{> header}}
+{{> navigation}}
+<div class="content">
+    <div class="chirps">
+        <h2 class="titlebar">Discover</h2>
+        <div id="userlist">
+            {{#each users}}
+                {{#if isAuth}}
+                {{else}}
+                {{> user}}
+                {{/if}}
+            {{else}}
+                <p>No users in database.</p>
+            {{/each}}
+        </div>
+    </div>
+</div>
+{{> footer}}

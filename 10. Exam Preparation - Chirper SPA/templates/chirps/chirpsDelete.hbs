@@ -1,0 +1,10 @@
+<article class="chirp">
+    <div class="titlebar">
+        <a href="#/chirps/:{{author}}" class="chirp-author">{{author}}</a>
+        {{#if isAuthor}}
+            <a class="deleteLink" href="#/delete/chirp/{{_id}}">delete</a>
+        {{/if}}
+        <span class="chirp-time">{{date}}</span>
+    </div>
+    <p>{{text}}</p>
+</article>
